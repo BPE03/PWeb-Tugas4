@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>PWeb Tugas 4</title>
+      <!-- MDB icon -->
+      <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+      <!-- Google Fonts Roboto -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+      <!-- MDB -->
+      <link rel="stylesheet" href="css/bootstrap-weather.min.css" />
+
+    </head>
+
+    <body>
+
+      <!-- Start your project here-->
+  <style>
+    .gradient-custom {
+      /* fallback for old browsers */
+      background: #ffffff;
+
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1));
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1))
+    }
+
+    .carousel-indicators li {
+      background-color: #282828;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+  </style>
+  <section class="vh-100" style="background-color: #C1CFEA;">
+    <div class="container py-5 h-100">
+  
+      <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+        <div class="col-md-9 col-lg-7 col-xl-5">
+  
+          <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+            <div class="card-body p-4">
+  
+              <div id="demo1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo1" data-slide-to="1"></li>
+                  <li data-target="#demo1" data-slide-to="2"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-between mb-4 pb-2">
+                      <div>
+                        <h2 id="temp-now" class="display-2"><strong></strong></h2>
+                        <p id="location" class="text-muted mb-0"></p>
+                      </div>
+                      <div>
+                        <img id="icon-now" src="" alt=""
+                          width="150px"></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card mb-4" style="border-radius: 25px;">
+            <div class="card-body p-4">
+  
+              <div id="demo2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo2" data-slide-to="0"></li>
+                  <li data-target="#demo2" data-slide-to="1" class="active"></li>
+                  <li data-target="#demo2" data-slide-to="2"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                      <div class="flex-column">
+                        <h2 id="temp-time-1" class="small"><strong></strong></h2>
+                        <img id="icon-time-1" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="clock1"class="small"><strong>12:00</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <h2 id="temp-time-2" class="small"><strong></strong></h2>
+                        <img id="icon-time-2" arc="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="clock2" class="small"><strong>1:00</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <h2 id="temp-time-3" class="small"><strong></strong></h2>
+                        <img id="icon-time-3" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="clock3" class="small"><strong>2:00</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <h2 id="temp-time-4" class="small"><strong></strong></h2>
+                        <img id="icon-time-4" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="clock4" class="small"><strong>3:00</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <h2 id="temp-time-5" class="small"><strong></strong></h2>
+                        <img id="icon-time-5" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="clock5" class="small"><strong>4:00</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card" style="border-radius: 25px;">
+            <div class="card-body p-4">
+  
+              <div id="demo3" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo3" data-slide-to="0"></li>
+                  <li data-target="#demo3" data-slide-to="1"></li>
+                  <li data-target="#demo3" data-slide-to="2" class="active"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                      <div class="flex-column">
+                        <h2 id="temp-day-1" class="small"><strong>21°C</strong></h2>
+                        <img id="icon-day-1" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="day1" class="mb-0"><strong>Mon</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <h2 id="temp-day-2" class="small"><strong>20°C</strong></h2>
+                        <img id="icon-day-2" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="day2" class="mb-0"><strong>Tue</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <h2 id="temp-day-3" class="small"><strong>16°C</strong></h2>
+                        <img id="icon-day-3" src="" class="fas fa-2x mb-3" style="color: #ddd;"></img>
+                        <p id="day3" class="mb-0"><strong>Wed</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  
+  <!-- End your project here-->
+  
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+    <script type="text/javascript" src="weather.js"></script>
+
+  
+    
+    </body>
+
+</html>
